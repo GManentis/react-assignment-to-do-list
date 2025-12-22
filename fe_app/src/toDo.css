@@ -1,0 +1,15 @@
+.linediv {
+  position: relative;
+  width: 300px;   /* adjust as needed */
+  height: 100px;  /* adjust as needed */
+  border: 1px solid #ccc; /* optional, just to see the box */
+}
+
+.linediv::before {
+  content: "";
+  position: absolute;
+  top: 50%;       /* vertical center */
+  left: 0;
+  width: 100%;
+  border-top: 2px solid red; /* the line itself */
+}

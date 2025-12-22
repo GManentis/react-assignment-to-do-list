@@ -1,0 +1,12 @@
+services:   
+   react:
+        image: node:18
+        working_dir: /app
+        volumes:
+          - ./fe_app:/app
+          - ./site_example:/site_example
+        ports:
+          - "3001:3000"
+          - 8080:8080
+        stdin_open: true  # Keeps the container interactive
+        tty: true  # Prevents auto-exit
